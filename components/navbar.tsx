@@ -26,7 +26,7 @@ const Navbar = () => {
           className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 
                     sm:w-[initial] sm:flex-nowrap sm:gap-5"
         >
-          {links.map((link: any) => (
+          {links.map((link) => (
             <motion.li
               key={link.hash}
               className="flex items-center justify-center p-3 hover:text-gray-950"
