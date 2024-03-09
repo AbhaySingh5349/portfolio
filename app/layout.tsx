@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} w-screen h-screen bg-gradient-to-b from-blue-50 to-red-100 relative text-gray-500`}
+        className={`${inter.className} w-screen h-screen bg-gradient-to-b from-blue-50 to-red-100 relative text-gray-500 pt-32 sm:pt-24`}
       >
         <Navbar />
         {children}

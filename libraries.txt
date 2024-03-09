@@ -46,3 +46,6 @@ npm install react-icons
 
 // for animations
 npm i framer-motion
+
+// typing animation
+npm i react-type-animation
