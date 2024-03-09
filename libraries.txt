@@ -40,3 +40,6 @@ git commit -m "added tailwind, prettier and linting libraries"
 git branch -M main
 git remote add origin https://github.com/AbhaySingh5349/portfolio.git
 git push -u origin main
+
+// for icons
+npm install react-icons
