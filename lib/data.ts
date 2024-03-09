@@ -7,7 +7,7 @@ import { TbBinaryTree } from 'react-icons/tb';
 
 import dev_overflow from '@/public/dev_overflow.png';
 import airbnb from '@/public/airbnb.png';
-import messenger_app from '@public/messenger_app.png';
+// import messenger_app from '@public/messenger_app.png';
 
 export const links = [
   {
@@ -99,12 +99,12 @@ export const projectsData = [
     ],
     imageUrl: airbnb,
   },
-  {
-    title: 'Messenger App',
-    description: `Developed an Android application where users can chat and exchanges multi-media messages`,
-    tags: ['Java', 'Android SDK'],
-    imageUrl: messenger_app,
-  },
+  // {
+  //   title: 'Messenger App',
+  //   description: `Developed an Android application where users can chat and exchanges multi-media messages`,
+  //   tags: ['Java', 'Android SDK'],
+  //   imageUrl: messenger_app,
+  // },
 ] as const;
 
 export const skillsData = [
