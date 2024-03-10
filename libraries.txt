@@ -49,3 +49,9 @@ npm i framer-motion
 
 // typing animation
 npm i react-type-animation
+
+// conditionally apply tailwind classes
+npm install clsx
+
+// to identify which section is in view currently (help in varying active section in navbar)
+npm install react-intersection-observer

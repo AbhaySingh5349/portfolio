@@ -7,11 +7,15 @@ import { LuGraduationCap } from 'react-icons/lu';
 
 import { SectionHeading } from '@/components';
 
+import { useSectionInView } from '@/hooks';
+
 // <span className="font-medium">full-stack web development</span>
 
 const Intro = () => {
+  const { ref } = useSectionInView('About', 0.75);
   return (
     <motion.section
+      ref={ref}
       className="mb-28 max-w-[45rem] text-center leading-6 sm:mb-20 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}

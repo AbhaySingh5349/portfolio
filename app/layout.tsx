@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 
 import { Navbar } from '@/components';
-import { useEffect } from 'react';
+import { ActiveSectionContextProvider } from '@/context';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -20,13 +20,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="!scroll-smooth">
       <body
-        id="gradient"
         className={`${inter.className} w-screen h-[5000px] bg-gradient-to-r from-blue-50 to-red-100 relative text-gray-500 pt-32 sm:pt-24`}
       >
-        <Navbar />
-        {children}
+        <ActiveSectionContextProvider>
+          <Navbar />
+          {children}
+        </ActiveSectionContextProvider>
       </body>
     </html>
   );

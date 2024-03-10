@@ -6,11 +6,19 @@ import { motion } from 'framer-motion'; // uses useEfeect under the hood
 
 import { links } from '@/lib';
 import Link from 'next/link';
+import clsx from 'clsx'; // to work with dynamic classes added on specific conditions
+import { useInView } from 'react-intersection-observer';
+
+import { useActiveSectionContext } from '@/context';
 
 // relative class for z index to work
 // -translate to pull back navbar to exact center of page
 
 const Navbar = () => {
+  // const [activeSection, setActiveSection] = useState<string>('Home');
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
+
   return (
     <header className="z-10 relative bg-slate-400">
       <motion.div
@@ -29,11 +37,31 @@ const Navbar = () => {
           {links.map((link) => (
             <motion.li
               key={link.hash}
-              className="flex items-center justify-center p-3 hover:text-gray-950"
+              className={clsx(
+                'flex items-center justify-center px-[14px] py-3 hover:text-gray-950 relative',
+                { 'text-black': link.name === activeSection }
+              )}
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
+              onClick={() => {
+                setActiveSection(link.name);
+                setTimeOfLastClick(Date.now());
+              }}
             >
-              <Link href={link.hash}>{link.name}</Link>
+              <Link href={link.hash}>
+                {link.name}
+                {link.name === activeSection && (
+                  <motion.span
+                    className="bg-gray-200/60 rounded-full absolute inset-1 -z-10"
+                    layoutId="activeSection"
+                    transition={{
+                      type: 'spring',
+                      stiffness: 380,
+                      damping: 30,
+                    }}
+                  />
+                )}
+              </Link>
             </motion.li>
           ))}
         </ul>

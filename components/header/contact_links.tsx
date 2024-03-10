@@ -11,11 +11,13 @@ import { motion } from 'framer-motion'; // uses useEffect, so client component
 import { TypeAnimation } from 'react-type-animation';
 import Link from 'next/link';
 
+import { useSectionInView } from '@/hooks';
 import abhay_singh from '@/public/abhay_singh.jpeg';
 
 const ContactLinks = () => {
+  const { ref } = useSectionInView('Home', 0.5);
   return (
-    <section>
+    <section ref={ref} id="home" className="scroll-mt-[50rem]">
       <div className="flex flex-col items-center justify-center">
         <div className="relative">
           <motion.div

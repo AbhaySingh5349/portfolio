@@ -1,13 +1,17 @@
+'use client';
+
 import React from 'react';
 
 import { SectionHeading, ProjectCard } from '@/components';
 import { projectsData } from '@/lib';
+import { useSectionInView } from '@/hooks';
 
-// title, description, tags, imageUrl
+// scroll-mt-28: when we navigatw through links, it will help in not overlapping navbar with section but maintains a margin
 
 const Projects = () => {
+  const { ref } = useSectionInView('Projects', 0.5);
   return (
-    <section>
+    <section ref={ref} id="projects" className="scroll-mt-28">
       <SectionHeading>Projects</SectionHeading>
       <div>
         {projectsData.map((project, index) => (
