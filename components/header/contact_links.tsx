@@ -13,7 +13,7 @@ import Link from 'next/link';
 
 import abhay_singh from '@/public/abhay_singh.jpeg';
 
-const Intro = () => {
+const ContactLinks = () => {
   return (
     <section>
       <div className="flex flex-col items-center justify-center">
@@ -33,6 +33,7 @@ const Intro = () => {
               width="192"
               height="192"
               priority={true}
+              // quality={90}
               className="h-48 w-48 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
@@ -123,4 +124,4 @@ const Intro = () => {
   );
 };
 
-export default Intro;
+export default ContactLinks;
