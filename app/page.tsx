@@ -1,6 +1,12 @@
 import React from 'react';
 
-import { ContactLinks, SectionDivider, Intro, Projects } from '@/components';
+import {
+  ContactLinks,
+  SectionDivider,
+  Intro,
+  Projects,
+  Proficiencies,
+} from '@/components';
 
 const Home = () => {
   return (
@@ -9,6 +15,7 @@ const Home = () => {
       <SectionDivider />
       <Intro />
       <Projects />
+      <Proficiencies />
     </div>
   );
 };

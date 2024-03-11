@@ -24,7 +24,7 @@ const Navbar = () => {
       <motion.div
         className="fixed top-2 left-1/2 -translate-x-1/2 h-[6.5rem] w-11/12 rounded-none border 
                     border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] 
-                      backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full"
+                      backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[40rem] sm:rounded-full"
         initial={{ y: -100, x: '-50%', opacity: 0 }} // since we are over-riding other animations, so to add effect same as -translate-x-1/2, we added x:'-50%'
         animate={{ y: 0, x: '-50%', opacity: 1 }}
       />

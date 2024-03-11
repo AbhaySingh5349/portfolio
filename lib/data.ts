@@ -23,8 +23,8 @@ export const links = [
     hash: '#projects',
   },
   {
-    name: 'Skills',
-    hash: '#skills',
+    name: 'Proficiencies',
+    hash: '#proficiencies',
   },
   {
     name: 'Experience',
@@ -127,4 +127,15 @@ export const skillsData = [
   'Tailwind',
   'MongoDB',
   'Framer Motion',
+] as const;
+
+export const CertificationsData = [
+  {
+    title: 'Machine Learning Specialization',
+    link: 'https://www.coursera.org/account/accomplishments/specialization/certificate/8JGFBT2626S3',
+  },
+  {
+    title: 'Deep Learning Specialization',
+    link: 'https://www.coursera.org/account/accomplishments/specialization/certificate/MWZF2A8693JR',
+  },
 ] as const;

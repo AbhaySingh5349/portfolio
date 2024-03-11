@@ -5,3 +5,5 @@ export { default as Intro } from './about/intro';
 export { default as SectionHeading } from './shared/section-heading';
 export { default as Projects } from './about/projects';
 export { default as ProjectCard } from './cards/project';
+export { default as Proficiencies } from './about/proficiencies';
+export { default as TabBtn } from './shared/tab_btn';
