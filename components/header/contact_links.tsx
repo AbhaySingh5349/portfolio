@@ -94,7 +94,7 @@ const ContactLinks = () => {
         >
           <Link
             href="#contact"
-            className="group bg-gray-900 text-white px-4 py-3 flex items-center justify-center gap-0.5 rounded-full outline-none focus:scale-[1.10] hover:scale-[1.10] active:scale-105 transition cursor-pointer"
+            className="group bg-gray-900 text-white px-4 py-3 flex items-center justify-center gap-0.5 rounded-full outline-none focus:scale-[1.10] hover:scale-[1.10] active:scale-105 transition cursor-pointer dark:bg-white/10 dark:text-white/60"
             onClick={() => {
               setActiveSection('Contact');
               setTimeOfLastClick(Date.now());

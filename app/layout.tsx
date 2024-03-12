@@ -2,9 +2,10 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 
-import { Navbar, Footer } from '@/components';
-import { ActiveSectionContextProvider } from '@/context';
 import { Toaster } from 'react-hot-toast';
+
+import { Navbar, Footer, ThemeSwitch } from '@/components';
+import { ActiveSectionContextProvider, ThemeContextProvider } from '@/context';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -23,14 +24,17 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className} w-screen h-screen bg-gradient-to-r from-blue-50 to-red-100 relative text-gray-500 pt-32 sm:pt-24`}
+        className={`${inter.className} w-screen h-screen relative bg-gradient-to-r from-blue-50 to-red-100  text-gray-500 pt-32 sm:pt-24 dark:bg-none dark:bg-gradient-none dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
-        <ActiveSectionContextProvider>
-          <Navbar />
-          {children}
-          <Footer />
-          <Toaster position="top-right" />
-        </ActiveSectionContextProvider>
+        <ThemeContextProvider>
+          <ActiveSectionContextProvider>
+            <Navbar />
+            {children}
+            <Footer />
+            <Toaster position="top-right" />
+          </ActiveSectionContextProvider>
+          <ThemeSwitch />
+        </ThemeContextProvider>
       </body>
     </html>
   );

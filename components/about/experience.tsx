@@ -7,8 +7,10 @@ import { VerticalTimeline } from 'react-vertical-timeline-component';
 import { SectionHeading, TimelineElement } from '@/components';
 import { experiencesData } from '@/lib';
 import { useSectionInView } from '@/hooks';
+import { useThemeContext } from '@/context';
 
 const Experience = () => {
+  const { theme } = useThemeContext();
   const { ref } = useSectionInView('Experience', 0.5);
 
   return (
@@ -21,7 +23,7 @@ const Experience = () => {
       <h3 className="italic text-blue-300">
         (At Reliance Jio July 22 - Present)
       </h3>
-      <VerticalTimeline lineColor="#e5e7eb">
+      <VerticalTimeline lineColor={theme === 'light' ? '#e5e7eb' : '#80848c'}>
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <TimelineElement

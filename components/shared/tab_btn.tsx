@@ -11,7 +11,7 @@ const variants = {
 const TabBtn = ({ active, selectTab, children }: any) => {
   const buttonClasses = active
     ? 'text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-red-400'
-    : 'text-black/80';
+    : 'text-black/80 dark:text-white/60';
 
   return (
     <button onClick={selectTab}>

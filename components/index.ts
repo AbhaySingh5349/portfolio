@@ -13,3 +13,4 @@ export { default as Contact } from './about/contact';
 export { default as SubmitBtn } from './shared/submit_btn';
 export { default as ContactFormEmail } from './shared/contact_form_email';
 export { default as Footer } from './shared/footer';
+export { default as ThemeSwitch } from './shared/theme_switch';
