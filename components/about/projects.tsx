@@ -9,7 +9,7 @@ import { useSectionInView } from '@/hooks';
 // scroll-mt-28: when we navigatw through links, it will help in not overlapping navbar with section but maintains a margin
 
 const Projects = () => {
-  const { ref } = useSectionInView('Projects', 0.5);
+  const { ref } = useSectionInView('Projects', 0.3);
   return (
     <section ref={ref} id="projects" className="mb-14 sm:mb-20 scroll-mt-28">
       <SectionHeading>Projects</SectionHeading>
