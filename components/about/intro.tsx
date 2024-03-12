@@ -39,20 +39,21 @@ const Intro = () => {
         <span className="font-medium">Golang</span> ,{' '}
         <span className="font-medium">gRPC</span> ,{' '}
         <span className="font-medium">Protocol Buffers</span> and{' '}
-        <span className="font-medium">Grule engine</span> which I've leveraged
-        to build a <span className="font-medium">recommendation system</span> to
-        generate dynamic advisories. Additionally, ventured into{' '}
+        <span className="font-medium">Grule engine</span> which I&apos;ve
+        leveraged to build a{' '}
+        <span className="font-medium">recommendation system</span> to generate
+        dynamic advisories. Additionally, ventured into{' '}
         <span className="font-medium">AI</span>, particularly{' '}
-        <span className="font-medium">Image Super-Resolution</span>, where I've
-        honed my skills with{' '}
+        <span className="font-medium">Image Super-Resolution</span>, where
+        I&apos;ve honed my skills with{' '}
         <span className="font-medium">Generative Adversarial Network</span>{' '}
         models using <span className="font-medium">TensorFlow</span> and{' '}
         <span className="font-medium">Python</span>.
       </p>
 
       <p>
-        <span className="italic">Beyond my professional endeavors</span>, I've
-        undertaken personal projects utilizing{' '}
+        <span className="italic">Beyond my professional endeavors</span>,
+        I&apos;ve undertaken personal projects utilizing{' '}
         <span className="font-medium">TypeScript</span>,{' '}
         <span className="font-medium">Node.js</span>,{' '}
         <span className="font-medium">Next.js</span>,{' '}

@@ -59,7 +59,6 @@ export const experiencesData = [
     icon: React.createElement(MdOutlineCloudUpload),
     date: '2021 - present',
   },
-  ,
   {
     title: 'Lightening Fast Geospatial Queries',
     description: `Implemented R-tree Data Structure for accelerating Nearest Neighbor Searches based on Lat/Lng 
