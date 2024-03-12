@@ -7,7 +7,6 @@ import { motion } from 'framer-motion'; // uses useEfeect under the hood
 import { links } from '@/lib';
 import Link from 'next/link';
 import clsx from 'clsx'; // to work with dynamic classes added on specific conditions
-import { useInView } from 'react-intersection-observer';
 
 import { useActiveSectionContext } from '@/context';
 

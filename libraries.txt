@@ -55,3 +55,7 @@ npm install clsx
 
 // to identify which section is in view currently (help in varying active section in navbar)
 npm install react-intersection-observer
+
+// to create vertical line for experience
+npm i react-vertical-timeline-component
+npm i --save-dev @types/react-vertical-timeline-component

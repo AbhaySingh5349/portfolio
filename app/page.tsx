@@ -6,6 +6,7 @@ import {
   Intro,
   Projects,
   Proficiencies,
+  Experience,
 } from '@/components';
 
 const Home = () => {
@@ -14,8 +15,9 @@ const Home = () => {
       <ContactLinks />
       <SectionDivider />
       <Intro />
-      <Projects />
       <Proficiencies />
+      <Experience />
+      <Projects />
     </div>
   );
 };

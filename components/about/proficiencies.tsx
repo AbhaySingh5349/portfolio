@@ -37,7 +37,7 @@ const Proficiencies = () => {
     <section
       ref={ref}
       id="proficiencies"
-      className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
+      className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-28"
     >
       <div className="mt-4 flex flex-row justify-center gap-2">
         <TabBtn

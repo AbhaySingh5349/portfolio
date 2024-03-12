@@ -19,16 +19,16 @@ export const links = [
     hash: '#intro',
   },
   {
-    name: 'Projects',
-    hash: '#projects',
-  },
-  {
     name: 'Proficiencies',
     hash: '#proficiencies',
   },
   {
     name: 'Experience',
     hash: '#experience',
+  },
+  {
+    name: 'Projects',
+    hash: '#projects',
   },
   {
     name: 'Contact',
@@ -42,20 +42,20 @@ export const experiencesData = [
     description: `Implemented Golang based Grule Engine with structured Protocol Buffers schemas utilizing gRPC for building communication channels 
       to generate dynamic advisories for farmers from diverse datasets of soil health, crop types and geographic locations.
       `,
-    icon: React.createElement(SiCoronaengine),
+    icon: React.createElement(SiCoronaengine), // since we are in .ts file & not in .tsx, so we need cannot use like <SiCoronaengine />
     date: '2019',
   },
   {
     title: 'Satellite Imagery Resolution Enhancement',
     description: `Implemented Generative Adversarial Network(ESRGAN) model using Python TensorFlow 
-                  for enhancing image resolution to 4 times alongside automating image retrieval`,
+                  for enhancing image resolution to 4 times.`,
     icon: React.createElement(LuBrainCircuit),
     date: '2019 - 2021',
   },
   {
     title: 'Automated Image Download and Cloud Storage Integration',
     description: `Developed a backend service using Python automating downloads of image tiles from QGIS(Quantum Geographic Information System) at a particular resolution for given diagonal Lat/Lng 
-       and stored in Azure Blob`,
+       and stored in Azure Blob.`,
     icon: React.createElement(MdOutlineCloudUpload),
     date: '2021 - present',
   },
@@ -63,7 +63,7 @@ export const experiencesData = [
   {
     title: 'Lightening Fast Geospatial Queries',
     description: `Implemented R-tree Data Structure for accelerating Nearest Neighbor Searches based on Lat/Lng 
-       reducing search time from 7.5 secs to 0.5 sec`,
+       reducing search time from 7.5 secs to 0.5 sec.`,
     icon: React.createElement(TbBinaryTree),
     date: '2021 - present',
   },
