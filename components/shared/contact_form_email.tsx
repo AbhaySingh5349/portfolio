@@ -32,7 +32,7 @@ const ContactFormEmail = ({ message, senderEmail }: ContactFormEmailProps) => {
               </Heading>
               <Text>{message}</Text>
               <Hr />
-              <Text>The sender's email is: {senderEmail}</Text>
+              <Text>The sender&apos;s email is: {senderEmail}</Text>
             </Section>
           </Container>
         </Body>
