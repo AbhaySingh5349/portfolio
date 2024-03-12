@@ -26,6 +26,7 @@ const Proficiencies = () => {
 
   const [tab, setTab] = useState<ProficienciesTab>('Skills');
   const [isPending, startTransition] = useTransition();
+  console.log('isPendingTransition: ', isPending);
 
   const handleTabChange = (id: ProficienciesTab) => {
     startTransition(() => {

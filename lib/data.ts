@@ -5,9 +5,9 @@ import { LuBrainCircuit } from 'react-icons/lu';
 import { MdOutlineCloudUpload } from 'react-icons/md';
 import { TbBinaryTree } from 'react-icons/tb';
 
-import dev_overflow from '@/public/dev_overflow.png';
+import devOverflow from '@/public/dev_overflow.png';
 import airbnb from '@/public/airbnb.png';
-import messenger_app from '@/public/messenger_app.png';
+import messengerApp from '@/public/messenger_app.png';
 
 export const links = [
   {
@@ -83,7 +83,7 @@ export const projectsData = [
       'MongoDB',
       'Tailwind',
     ],
-    imageUrl: dev_overflow,
+    imageUrl: devOverflow,
   },
   {
     title: 'Booking WebApp',
@@ -103,7 +103,7 @@ export const projectsData = [
     title: 'Messenger App',
     description: `Developed an Android application where users can find friends, send requests, chat and exchanges multi-media messages`,
     tags: ['Java', 'Android SDK'],
-    imageUrl: messenger_app,
+    imageUrl: messengerApp,
   },
 ] as const;
 

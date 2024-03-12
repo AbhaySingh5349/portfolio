@@ -45,6 +45,7 @@ const Contact = () => {
         action={async (formData) => {
           console.log(formData.get('senderEmail'));
           const { data, error } = await sendEmail(formData);
+          console.log('Email data: ', data);
           if (error) {
             toast.error(error);
             return;

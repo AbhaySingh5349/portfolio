@@ -14,7 +14,7 @@ import Link from 'next/link';
 import { useSectionInView } from '@/hooks';
 import { useActiveSectionContext } from '@/context';
 
-import abhay_singh from '@/public/abhay_singh.jpeg';
+import abhaySingh from '@/public/abhay_singh.jpeg';
 
 const ContactLinks = () => {
   const { ref } = useSectionInView('Home', 0.5);
@@ -34,7 +34,7 @@ const ContactLinks = () => {
             }}
           >
             <Image
-              src={abhay_singh}
+              src={abhaySingh}
               alt="Abhay Singh"
               width="192"
               height="192"
@@ -65,7 +65,7 @@ const ContactLinks = () => {
           animate={{ opacity: 1, y: 0 }}
         >
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-red-400">
-            Hello, I'm{' '}
+            Hello, I&apos;m{' '}
           </span>
           <TypeAnimation
             sequence={[

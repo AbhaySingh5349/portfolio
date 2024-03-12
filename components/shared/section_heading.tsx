@@ -1,3 +1,5 @@
+import React from 'react';
+
 type SectionHeadingData = {
   children: React.ReactNode;
 };
