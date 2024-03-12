@@ -9,3 +9,6 @@ export { default as Proficiencies } from './about/proficiencies';
 export { default as TabBtn } from './shared/tab_btn';
 export { default as Experience } from './about/experience';
 export { default as TimelineElement } from './shared/verticle_timeline_element';
+export { default as Contact } from './about/contact';
+export { default as SubmitBtn } from './shared/submit_btn';
+export { default as ContactFormEmail } from './shared/contact_form_email';

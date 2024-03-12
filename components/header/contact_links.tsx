@@ -12,10 +12,14 @@ import { TypeAnimation } from 'react-type-animation';
 import Link from 'next/link';
 
 import { useSectionInView } from '@/hooks';
+import { useActiveSectionContext } from '@/context';
+
 import abhay_singh from '@/public/abhay_singh.jpeg';
 
 const ContactLinks = () => {
   const { ref } = useSectionInView('Home', 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
   return (
     <section ref={ref} id="home" className="scroll-mt-[50rem]">
       <div className="flex flex-col items-center justify-center">
@@ -91,6 +95,10 @@ const ContactLinks = () => {
           <Link
             href="#contact"
             className="group bg-gray-900 text-white px-4 py-3 flex items-center justify-center gap-0.5 rounded-full outline-none focus:scale-[1.10] hover:scale-[1.10] active:scale-105 transition cursor-pointer"
+            onClick={() => {
+              setActiveSection('Contact');
+              setTimeOfLastClick(Date.now());
+            }}
           >
             Get In Touch{' '}
             <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />{' '}

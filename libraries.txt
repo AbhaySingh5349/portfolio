@@ -59,3 +59,12 @@ npm install react-intersection-observer
 // to create vertical line for experience
 npm i react-vertical-timeline-component
 npm i --save-dev @types/react-vertical-timeline-component
+
+// to allow emails to be sent from contact section
+npm i resend
+
+// to style emails
+npm i @react-email/components @react-email/tailwind
+
+// to display toast messages
+npm i react-hot-toast
