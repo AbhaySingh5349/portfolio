@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 
-import { Navbar } from '@/components';
+import { Navbar, Footer } from '@/components';
 import { ActiveSectionContextProvider } from '@/context';
 import { Toaster } from 'react-hot-toast';
 
@@ -23,11 +23,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className} w-screen h-[5000px] bg-gradient-to-r from-blue-50 to-red-100 relative text-gray-500 pt-32 sm:pt-24`}
+        className={`${inter.className} w-screen h-screen bg-gradient-to-r from-blue-50 to-red-100 relative text-gray-500 pt-32 sm:pt-24`}
       >
         <ActiveSectionContextProvider>
           <Navbar />
           {children}
+          <Footer />
           <Toaster position="top-right" />
         </ActiveSectionContextProvider>
       </body>

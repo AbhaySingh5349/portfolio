@@ -11,12 +11,12 @@ const variants = {
 const TabBtn = ({ active, selectTab, children }: any) => {
   const buttonClasses = active
     ? 'text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-red-400'
-    : 'text-[#ADB7BE]';
+    : 'text-black/80';
 
   return (
     <button onClick={selectTab}>
       <p
-        className={`mr-3 text-3xl font-semibold hover:font-bold ${buttonClasses}`}
+        className={`mr-3 text-3xl font-medium hover:font-bold ${buttonClasses}`}
       >
         {children}
       </p>
