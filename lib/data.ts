@@ -110,6 +110,7 @@ export const skillsData = [
   'Data Structures and Algorithms',
   'C++',
   'Golang',
+  'Java',
   'JavaScript',
   'TypeScript',
   'Python',
