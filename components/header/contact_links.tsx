@@ -73,7 +73,7 @@ const ContactLinks = () => {
               1000,
               'Backend Developer',
               1000,
-              'Web Dev Enthusiast',
+              'Web Dev and ML Enthusiast',
               1000,
               'Problem-Solver',
               1000,

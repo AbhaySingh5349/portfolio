@@ -32,8 +32,8 @@ const Intro = () => {
       </p>
 
       <p className="mb-3">
-        With 1.8 years of current experience as a Software Engineer, I started
-        my professional journey as a{' '}
+        With almost 2 years of current experience as a Software Engineer, I
+        started my professional journey as a{' '}
         <span className="font-medium">Backend Developer</span> where I got
         extensive experience in cutting-edge technologies like{' '}
         <span className="font-medium">Golang</span> ,{' '}

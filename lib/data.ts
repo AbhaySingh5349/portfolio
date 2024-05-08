@@ -61,9 +61,16 @@ export const experiencesData = [
   },
   {
     title: 'Lightening Fast Geospatial Queries',
-    description: `Implemented R-tree Data Structure for accelerating Nearest Neighbor Searches based on Lat/Lng 
+    description: `Utilized R-tree Data Structure for accelerating Nearest Neighbor Searches based on Lat/Lng 
        reducing search time from 7.5 secs to 0.5 sec.`,
     icon: React.createElement(TbBinaryTree),
+    date: '2021 - present',
+  },
+  {
+    title: 'Cattle Activity Classification Modelling',
+    description: `Developed classification model for real-time monitoring of cattle behavior using Python utilizing GridSearchCV for hyperparameter tuning to optimize model performance and translated 
+        code to C for deployment on embedded system`,
+    icon: React.createElement(LuBrainCircuit),
     date: '2021 - present',
   },
 ] as const;
@@ -137,5 +144,9 @@ export const CertificationsData = [
   {
     title: 'Deep Learning Specialization',
     link: 'https://www.coursera.org/account/accomplishments/specialization/certificate/MWZF2A8693JR',
+  },
+  {
+    title: 'Programming with Google Go',
+    link: 'https://www.coursera.org/account/accomplishments/specialization/GB7V7RQ2K3LU',
   },
 ] as const;
