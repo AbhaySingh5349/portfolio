@@ -32,23 +32,24 @@ const Intro = () => {
       </p>
 
       <p className="mb-3">
-        With almost 2 years of current experience as a Software Engineer, I
+        With over 2 years of current experience as a Software Engineer, I
         started my professional journey as a{' '}
-        <span className="font-medium">Backend Developer</span> where I got
-        extensive experience in cutting-edge technologies like{' '}
+        <span className="font-medium">Machine Learning Engineer</span> where I ventured into{' '}
+        <span className="font-medium">Computer Vision, Classical ML</span> and{' '}
+        <span className="font-medium">Image Super-Resolution</span>, where
+        I&apos;ve honed my skills with{' '}
+        <span className="font-medium">Generative Adversarial Network, Decision Trees</span>{' '}
+        models using <span className="font-medium">TensorFlow</span>,{' '}
+        <span className="font-medium">Python</span> and {' '}<span className="font-medium">C</span> to classify cattle activity using signals obtained from 3D Accelerometer. Going forward, I got
+        extensive experience as a{' '} <span className="font-medium">Backend Developer</span> in cutting-edge technologies like{' '}
         <span className="font-medium">Golang</span> ,{' '}
         <span className="font-medium">gRPC</span> ,{' '}
         <span className="font-medium">Protocol Buffers</span> and{' '}
         <span className="font-medium">Grule engine</span> which I&apos;ve
         leveraged to build a{' '}
         <span className="font-medium">recommendation system</span> to generate
-        dynamic advisories. Additionally, ventured into{' '}
-        <span className="font-medium">AI</span>, particularly{' '}
-        <span className="font-medium">Image Super-Resolution</span>, where
-        I&apos;ve honed my skills with{' '}
-        <span className="font-medium">Generative Adversarial Network</span>{' '}
-        models using <span className="font-medium">TensorFlow</span> and{' '}
-        <span className="font-medium">Python</span>.
+        dynamic advisories. Also, got opportunity to develop and optimize <span className="font-medium">Java Spring Boot APIs</span> for a SIEM platform, improving performance through <span className="font-medium">Redis Caching</span> and database indexing. 
+        Utilized Test-Driven Development (TDD) to achieve 90% code coverage and wrote comprehensive E2E integration tests. Implemented robust monitoring and error logging using SLF4J.
       </p>
 
       <p>
