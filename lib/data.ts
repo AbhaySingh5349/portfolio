@@ -38,6 +38,14 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: 'Security Information and Event Management',
+    description: `Implemented Java SpringBoot APIs for SIEM platform where we manage different assets and for every asset based on user action will generate log lines 
+      which needs to be monitored as they might contain potential security breaches and if thats the case, we throw alerts.
+      `,
+    icon: React.createElement(SiCoronaengine), // since we are in .ts file & not in .tsx, so we need cannot use like <SiCoronaengine />
+    date: '2019',
+  },
+  {
     title: 'AgriCare Fertlizer Recommendation System',
     description: `Implemented Golang based Grule Engine with structured Protocol Buffers schemas utilizing gRPC for building communication channels 
       to generate dynamic advisories for farmers from diverse datasets of soil health, crop types and geographic locations.
@@ -115,12 +123,13 @@ export const projectsData = [
 
 export const skillsData = [
   'Data Structures and Algorithms',
-  'C++',
-  'Golang',
   'Java',
+  'Golang',
+  'Python',
+  'C++',
   'JavaScript',
   'TypeScript',
-  'Python',
+  'SpringBoot',
   'React.js',
   'Next.js',
   'Node.js',
